@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const combos = {
         1: { name: "El Egoísta", price: "22.000", img: "img/Combo.jpg", details: ["Salchipapa personal con todo", "Queso gratinado", "Gaseosa personal"] },
         2: { name: "Dúo Dinamita", price: "38.000", img: "img/Combo.jpg", details: ["Salchipapa para dos con doble proteína", "Trozos de chicharrón", "Queso extra y salsas de la casa", "2 Gaseosas personales"] },
-        3: { name: "El Devastador", price: "45.000", img: "img/Combo.jpg", details: ["Base gigante de papas (francesa y criolla)", "Costilla al barril y chicharrón", "Queso gratinado, guacamole y pico de gallo", "Gaseosa 1.5L"] }
+        3: { name: "El Devastador", price: "45.000", img: "img/combo-devastador.jpg", details: ["Base gigante de papas (francesa y criolla)", "Costilla al barril y chicharrón", "Queso gratinado, guacamole y pico de gallo", "Gaseosa 1.5L"] }
     };
 
     const sonarBlips = ['🌭', '🍔', '🍟', '🌮', '🍕'];
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 scannerTitle.style.display = 'none';
                 sonarContainer.style.display = 'none';
                 interactionZone.style.display = 'block';
-            }, 7000); // Duración del radar aumentada a 7 segundos
+            }, 6000); // Duración del radar aumentada a 7 segundos
         });
     }
 
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <span class="stars">4.8 ⭐⭐⭐⭐⭐</span>
                     </div>
                     <div class="review-body">
-                        <p>"La mejor salchipapa que he probado. ¡Brutal!"</p>
+                        <p>"De los mejor calificados un combo. ¡Brutal!"</p>
                         <span>- Cliente Verificado</span>
                     </div>
                 </div>
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Etapa 1
         setTimeout(() => {
-            progressIcon.innerHTML = '🍔';
+            progressIcon.innerHTML = '🍟';
             progressText.textContent = 'CARGANDO PEDIDO...';
             progressBarInner.style.width = '33%';
         }, 100);
@@ -166,14 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // Etapa 2
         setTimeout(() => {
             progressIcon.innerHTML = '🎯';
-            progressText.textContent = 'SOLICITANDO ORDEN DE LA MISIÓN...';
+            progressText.textContent = 'SOLICITANDO ORDEN DEL ANTOJO...';
             progressBarInner.style.width = '66%';
         }, 2000);
 
         // Etapa 3
         setTimeout(() => {
             progressIcon.innerHTML = '📡';
-            progressText.textContent = 'ESTABLECIENDO COMUNICACIÓN...';
+            progressText.textContent = 'ESTABLECIENDO COMUNICACIÓN CON SALCHIPOTATO...';
             progressBarInner.style.width = '100%';
         }, 4000);
 
@@ -185,8 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function launchWhatsApp(nombre, direccion) {
         const comboName = selectedCombo.name;
-        const text = `¡Protocolo Hambre Cero Activado!\n\n💣 *COMBO:* ${comboName}\n👤 *AGENTE:* ${nombre}\n📍 *ZONA DE IMPACTO:* ${direccion}\n\n¡Espero mi arsenal para aniquilar el hambre!`;
-        const whatsappUrl = `https://wa.me/573007097006?text=${encodeURIComponent(text)}`;
+        const text = `¡Protocolo Hambre Cero Activado!\n\n💣 *COMBO:* ${comboName}\n👤 *NOMBRE:* ${nombre}\n📍 *DIRECCION:* ${direccion}\n\n¡Espero mi arsenal para aniquilar el hambre!`;
+        const whatsappUrl = `https://wa.me/573233362016?text=${encodeURIComponent(text)}`;
         window.open(whatsappUrl, '_blank');
         setTimeout(() => window.location.reload(), 1000);
     }
