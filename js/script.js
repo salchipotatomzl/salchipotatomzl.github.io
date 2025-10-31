@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                     <div class="review-body">
                         <p>"De los mejor calificados un combo. ¡Brutal!"</p>
-                        <span>- Cliente Verificado</span>
+                        <span>- Opinion real</span>
                     </div>
                 </div>
                 <button class="main-cta-btn" id="prepare-launch-btn">¡LO QUIERO AHORA!</button>
