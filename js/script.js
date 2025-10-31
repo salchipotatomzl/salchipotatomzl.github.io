@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function launchWhatsApp(nombre, direccion) {
         const comboName = selectedCombo.name;
         const text = `¡Protocolo Hambre Cero Activado!\n\n💣 *COMBO:* ${comboName}\n👤 *NOMBRE:* ${nombre}\n📍 *DIRECCION:* ${direccion}\n\n¡Espero mi arsenal para aniquilar el hambre!`;
-        const whatsappUrl = `https://wa.me/573233362016?text=${encodeURIComponent(text)}`;
+        const whatsappUrl = `https://wa.me/573007097006?text=${encodeURIComponent(text)}`;
         window.open(whatsappUrl, '_blank');
         setTimeout(() => window.location.reload(), 1000);
     }
