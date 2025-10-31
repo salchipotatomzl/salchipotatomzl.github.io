@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const combos = {
         1: { name: "El Egoísta", price: "22.000", img: "img/Combo.jpg", details: ["Salchipapa personal con todo", "Queso gratinado", "Gaseosa personal"] },
         2: { name: "Dúo Dinamita", price: "38.000", img: "img/Combo.jpg", details: ["Salchipapa para dos con doble proteína", "Trozos de chicharrón", "Queso extra y salsas de la casa", "2 Gaseosas personales"] },
-        3: { name: "El Devastador", price: "45.000", img: "img/combo-devastador.jpg", details: ["Base gigante de papas (francesa y criolla)", "Costilla al barril y chicharrón", "Queso gratinado, guacamole y pico de gallo", "Gaseosa 1.5L"] }
+        3: { name: "El Devastador", price: "45.000", img: "img/Combo.jpg", details: ["Base gigante de papas (francesa y criolla)", "Costilla al barril y chicharrón", "Queso gratinado, guacamole y pico de gallo", "Gaseosa 1.5L"] }
     };
 
     const sonarBlips = ['🌭', '🍔', '🍟', '🌮', '🍕'];
